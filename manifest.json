@@ -1,6 +1,6 @@
 {
   "manifest_version": 2,
-  "name": "Playlist Info",
+  "name": "Youtube Playlist Info",
   "description": "Extension that provides info about a Youtube Playlist",
   "version": "1.0",
 
