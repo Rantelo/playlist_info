@@ -3,7 +3,40 @@ body {
 }
 
 .container {
-  min-width: 300px;
-  heigh: 250px;
+  width: 500px;
+  border: 1px solid black;
 }
-
+.logo-banner {
+  background-color: #e62117;
+  color: white;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 15px;
+}
+.header {
+  display: flex;
+}
+.left {
+  margin: 5px 15px;
+}
+.right {
+  display: flex;
+  flex-direction: column;
+}
+.pl-title {
+  color: #333;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 1px;
+  padding-left: 0;
+  vertical-align: middle;
+  margin: 5px 0px;
+  line-height: 23px;
+}
+.pl-owner {
+  color: #767676;
+  margin-top: 4px;
+  font-size: 12px;
+  line-height: 1.3em;
+}
