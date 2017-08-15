@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
-  "name": "Length Estimator",
-  "description": "Extension to estimate how long is a Youtube Playlist",
+  "name": "Playlist Info",
+  "description": "Extension that provides info about a Youtube Playlist",
   "version": "1.0",
 
   "background": {
