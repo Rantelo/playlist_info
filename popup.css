@@ -95,7 +95,14 @@ a {
   border-radius: 50%;
   color: white;
   text-decoration: none;
-  text-align: center;
-  line-height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-size: 18px;
+}
+.button:before {
+  background: no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vflXBOoAR.webp) -751px -156px;
+  background-size: auto;
+  width: 16px;
+  height: 16px;
 }
