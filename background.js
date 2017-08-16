@@ -20,7 +20,8 @@ var timeToSeconds = time => {
   }
 }
 
-var sumTotalSecs = timestamps => timestamps.reduce((acc, e) => {
+var sumTotalSecs = timestamps => timestamps.reduce((acc, e, i) => {
+  if (i === 0) longest_video = 0;
   let t_secs = timeToSeconds(e);
   longest_video = (t_secs > longest_video ) ? t_secs : longest_video;
   return acc + t_secs;
