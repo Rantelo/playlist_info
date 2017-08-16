@@ -19,10 +19,31 @@
         </div>
       </div>
 
-      <div id="total_time"></div>
-      <div id="videos_qty"></div>
-      <div id="video_length_avg"></div>
-      <div id="longest_video"></div>
+      <div class="play">
+        <div></div>
+        <a href="#"><div class="button">▶</div></a>
+      </div>
+
+      <div class="info">
+        <div class="times">
+          <div>
+            <span id="total_label">Total</span>
+            <span id="total_time">00:00:00</span>
+          </div>
+          <div >
+            <span id="avg_label">Average</span>
+            <span id="avg_time">00:00:00</span>
+          </div>
+          <div>
+            <span id="longest_label">Longest</span>
+            <span id="longest_time">00:00:00</span>
+          </div>
+        </div>
+
+        <div class="about-videos">
+          In this Playlist there are <span id="video_qty">9 videos</span>, from <span id="from_channels">3 different channels</span>
+        </div>
+      </div>
     </div>
     <script src="popup.js"></script>
   </body>

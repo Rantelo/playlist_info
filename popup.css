@@ -4,7 +4,6 @@ body {
 
 .container {
   width: 500px;
-  border: 1px solid black;
 }
 .logo-banner {
   background-color: #e62117;
@@ -16,6 +15,7 @@ body {
 }
 .header {
   display: flex;
+  padding: 15px 0 5px;
 }
 .left {
   margin: 5px 15px;
@@ -39,4 +39,63 @@ body {
   margin-top: 4px;
   font-size: 12px;
   line-height: 1.3em;
+}
+.info {
+  display: flex;
+  padding: 5px 0 15px;
+}
+.times {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  width: 48%;
+  border-right: 1px solid #dbdbdb;
+}
+.times>div>span:first-child {
+  font-size: 15px;
+  font-weight: 600;
+  color: #333;
+}
+.times>div>span:last-child {
+  color: #767676;
+}
+.times>div {
+  display: flex;
+  justify-content: space-between;
+  margin: 0px 10px;
+}
+.about-videos {
+  padding: 10px;
+  width: 48%;
+  color: #767676;
+  font-size: 14px;
+}
+.about-videos>span {
+  font-weight: 600;
+  color: #333;
+}
+.play {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.play>div {
+  width: 350px;
+  height: 1px;
+  border-bottom: 1px solid #dbdbdb;
+  margin: 0px 15px;
+}
+a {
+  text-decoration: none;
+}
+.button {
+  width: 40px;
+  height: 40px;
+  background-color: #e62117;
+  border-radius: 50%;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  line-height: 35px;
+  font-size: 18px;
 }
