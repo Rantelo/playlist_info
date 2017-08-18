@@ -2,21 +2,35 @@
   "manifest_version": 2,
   "name": "Youtube Playlist Info",
   "description": "Extension that provides info about a Youtube Playlist",
-  "version": "1.0",
+  "version": "1.1",
+
+  "author": "Roberto Antelo [github.com/rantelo]",
 
   "background": {
     "scripts": ["background.js"]
   },
 
   "browser_action": {
-    "default_icon": "icon.png",
-    "default_popup": "popup.html"
+    "default_icon": {
+      "16":  "icon16.png",
+      "32":  "icon32.png",
+      "48":  "icon48.png",
+      "128": "icon128.png"
+    },
+    "default_popup": "popup.html",
+    "default_title": "Youtube Playlist Info"
+  },
+
+  "icons": {
+    "16":  "icon16.png",
+    "32":  "icon32.png",
+    "48":  "icon48.png",
+    "128": "icon128.png"
   },
 
   "permissions": [
     "background",
     "tabs",
-    "http://*/*",
-    "https://*/*"
+    "https://www.youtube.com/playlist?*"
   ]
 }
