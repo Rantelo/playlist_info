@@ -4,14 +4,14 @@ var formatTimestamps = arr_of_timestamps => arr_of_timestamps.map(e => e.outerTe
 var formatOwners = arr_of_owners => arr_of_owners.map(e => e.outerText);
 
 var init = () => {
-  let dom_timestamps = Array.from(document.getElementsByClassName("ytd-thumbnail-overlay-time-status-renderer"));
+  let dom_timestamps = Array.from(document.querySelectorAll("ytd-playlist-video-renderer .ytd-thumbnail-overlay-time-status-renderer"));
   let raw_timestamps = formatTimestamps(dom_timestamps);
-  let dom_owners = Array.from(document.getElementsByClassName("pl-video-owner"));
+  let dom_owners = Array.from(document.querySelectorAll("ytd-playlist-video-renderer ytd-video-meta-block"));
   let raw_owners = formatOwners(dom_owners);
-  let pl_title = document.getElementById("title").innerText;
+  let pl_title = document.querySelectorAll("ytd-playlist-sidebar-primary-info-renderer #title")[0].innerText;
   let pl_header = document.getElementById("playlist-thumbnails");
-  let thumb_src = pl_header.getElementsByTagName("img")[0].getAttribute("src");
-  let play_link = document.getElementById("thumbnail").getAttribute("href");
+  let thumb_src = document.querySelectorAll("ytd-playlist-sidebar-primary-info-renderer img")[0].getAttribute("src");
+  let play_link = document.querySelectorAll("ytd-playlist-sidebar-primary-info-renderer #thumbnail")[0].getAttribute("href");
   let owner = document.getElementById("owner-name").innerText;
 
   chrome.runtime.sendMessage({
