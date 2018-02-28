@@ -2,7 +2,7 @@
   "manifest_version": 2,
   "name": "Youtube Playlist Info",
   "description": "Extension that provides info about a Youtube Playlist",
-  "version": "1.2",
+  "version": "1.3",
 
   "author": "Roberto Antelo [github.com/rantelo]",
 
